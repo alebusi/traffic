@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+table {
+    top: 100%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: mymove 4s infinite;
+    animation-timing-function: linear;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+  width: 25vw;
+  height: 6vw;
+  background-color: white;
+}
+
+#elemento {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    background-color: orange;
+    border-radius: 80px;
+    border: solid 8px white;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.sinistra {
+    position: fixed;
+    width: 50vw;
+    height: 99vh;
+    touch-action: none;
+}
+
+.destra {
+    position: fixed;
+    width: 50vw;
+    height: 99vh;
+    left: 50vw;
+    touch-action: none;
+}
+
+@keyframes mymove {
+  0%   {top: 110%;}
+  100% {top: -6vw;}
+}

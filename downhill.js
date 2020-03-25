@@ -2,6 +2,8 @@ var caselle = ["uno","due","tre","quattro"];
 var colori = ["#FF3300","orange","#4285F4","#0F9D58"];
 var pos = 50;
 var dir = 1;
+var ind = 0;
+var indSave = 0;
 
 function verTastoPremuto(e) {
   if (e.keyCode == 37) {
@@ -47,10 +49,13 @@ function disegnaMattoni() {
   
   
 function coloraMattoni() {
-      ind=randomIntFromInterval(0,caselle.length - 1);
+      while (ind == indSave) {
+          ind=randomIntFromInterval(0,caselle.length - 1);
+      }
       for (step = 0; step < caselle.length; step++) { 
           document.getElementById(caselle[step]).style.backgroundColor=colori[ind];
       }
       document.getElementById(caselle[ind]).style.backgroundColor="black";
       document.getElementById("elemento").style.backgroundColor=colori[ind];
+      indSave=ind;
 }

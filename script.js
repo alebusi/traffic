@@ -1,10 +1,10 @@
 var colori = ["white","#FF3300","orange","#4285F4","#0F9D58","black"];
 var ind_c = 0;
-var distanza = ["10px","30px","60px","100px","160px","300px"];
+var distanza = ["30px","60px","100px","160px","220px"];
 var ind = 0;
 var dimensioni = ["20px","30px","50px","80px"];
 ind_dim = 0;
-var animazioni = ["vuoto","ruota","allarga"];
+var animazioni = ["vuoto","ruota","ruota_a","allarga"];
 ind_anim = 0;
 
 function cambioColore(td) {

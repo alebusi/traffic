@@ -79,7 +79,7 @@ div:hover {
 }
 
 .allarga {
-    animation: mymoveAllarga 12s infinite;
+    animation: mymoveAllarga 10s infinite;
     animation-timing-function: linear;
 }
 

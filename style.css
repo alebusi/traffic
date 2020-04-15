@@ -68,6 +68,16 @@ div:hover {
   100% {transform: translate(-50%, -50%)  rotate(359deg);}
 }
 
+.ruota_a {
+    animation: mymove_a 8s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove_a {
+  0%   {transform: translate(-50%, -50%) rotate(359deg);}
+  100% {transform: translate(-50%, -50%)  rotate(0deg);}
+}
+
 .allarga {
     animation: mymoveAllarga 12s infinite;
     animation-timing-function: linear;
@@ -75,6 +85,6 @@ div:hover {
 
 @keyframes mymoveAllarga {
   0%   {border-spacing: 30px;}
-  50%  {border-spacing: 300px;}
+  50%  {border-spacing: 220px;}
   100% {border-spacing: 30px;}
 }

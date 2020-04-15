@@ -85,6 +85,6 @@ div:hover {
 
 @keyframes mymoveAllarga {
   0%   {border-spacing: 30px;}
-  50%  {border-spacing: 220px;}
+  50%  {border-spacing: 200px;}
   100% {border-spacing: 30px;}
 }

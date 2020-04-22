@@ -26,27 +26,24 @@ td {
   background-color: white;
 }
 
-.tastoDim {
-      position: fixed;    
-      top: 0vh;
-      left: 80vw;
+div {
+      position: fixed; 
       width: 20vw;
       height: 50vh;
 }
 
-.tastoDis {
-      position: fixed;    
-      top: 50vh;
+.tastoDim {
+      top: 0vh;
       left: 80vw;
-      width: 20vw;
-      height: 50vh;
 }
 
 .tastoAnim {
-      position: fixed;    
       top: 50vh;
-      width: 20vw;
-      height: 50vh;
+}
+
+.tastoDis {
+      top: 50vh;
+      left: 80vw;
 }
 
 div:hover {

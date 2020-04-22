@@ -39,3 +39,15 @@ function cambioAnimazione() {
   if (ind_anim > animazioni.length-1) ind_anim=0;
   document.getElementById("griglia").className=animazioni[ind_anim];
 }
+
+function cambioForma() {
+  var x = document.getElementsByTagName("TD");
+  for (i = 0; i < x.length; i++) {
+    if (document.getElementById("campione").style.borderRadius == "0px") {
+      x[i].style.borderRadius = "100px";
+    }
+    else {
+      x[i].style.borderRadius = "0px";
+    }
+  }
+}

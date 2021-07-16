@@ -9,40 +9,15 @@ html, body {
     user-select: none; /* Standard syntax */
 }
 
-table {
-    border-spacing: 30px;
-    border-collapse: separate;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-td {
-  width: 20px;
-  height: 20px;
-  border-radius: 80px;
-  background-color: white;
-}
-
-div {
+.tastoTogli {
       position: fixed; 
       width: 20vw;
       height: 50vh;
 }
 
-.tastoDim {
+.tastoAggiungi {
+      position: fixed;
       top: 0vh;
-      left: 80vw;
-}
-
-.tastoAnim {
-      top: 50vh;
-}
-
-.tastoDis {
-      top: 50vh;
       left: 80vw;
 }
 
@@ -73,15 +48,4 @@ div:hover {
 @keyframes mymove_a {
   0%   {transform: translate(-50%, -50%) rotate(359deg);}
   100% {transform: translate(-50%, -50%)  rotate(0deg);}
-}
-
-.allarga {
-    animation: mymoveAllarga 10s infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes mymoveAllarga {
-  0%   {border-spacing: 30px;}
-  50%  {border-spacing: 200px;}
-  100% {border-spacing: 30px;}
 }

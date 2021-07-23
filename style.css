@@ -9,6 +9,7 @@ html, body {
     user-select: none; /* Standard syntax */
 }
 
+
 .tastoTogli {
       position: fixed; 
       width: 20vw;
@@ -17,6 +18,8 @@ html, body {
 
 .tastoAggiungi {
       position: fixed;
+      width: 20vw;
+      height: 50vh;
       top: 0vh;
       left: 80vw;
 }
@@ -30,7 +33,32 @@ div:hover {
   100% {background-color: black;}
 }
 
-.ruota {
+.orario, .antiorario {
+    width: 10vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*background-color: red;*/
+}
+
+#car {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    animation: mymove_car 8s alternate infinite;
+    animation-timing-function: linear;
+}
+
+.orario {
     animation: mymove 8s infinite;
     animation-timing-function: linear;
 }
@@ -40,7 +68,7 @@ div:hover {
   100% {transform: translate(-50%, -50%)  rotate(359deg);}
 }
 
-.ruota_a {
+.antiorario {
     animation: mymove_a 8s infinite;
     animation-timing-function: linear;
 }
@@ -48,4 +76,9 @@ div:hover {
 @keyframes mymove_a {
   0%   {transform: translate(-50%, -50%) rotate(359deg);}
   100% {transform: translate(-50%, -50%)  rotate(0deg);}
+}
+
+@keyframes mymove_car {
+  0%   {top: 0%;}
+  100% {top: 80%;}
 }

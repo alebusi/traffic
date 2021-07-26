@@ -59,10 +59,8 @@ function cambiaSfondo() {
 function cambiaDimensione() {
   if (variaDim) {
     variaDim = false;
-    alert("false");
   }
   else {
     variaDim = true;
-    alert("true");
   }
 }

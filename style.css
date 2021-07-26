@@ -10,17 +10,22 @@ html, body {
 }
 
 
-.tastoTogli {
+.tastoTogli, .tastoAggiungi, .tastoSfondo, .tastoDimensione {
       position: fixed; 
       width: 20vw;
       height: 50vh;
 }
 
 .tastoAggiungi {
-      position: fixed;
-      width: 20vw;
-      height: 50vh;
-      top: 0vh;
+      left: 80vw;
+}
+
+.tastoSfondo {
+      top: 50vh;
+}
+
+.tastoDimensione {
+      top: 50vh;
       left: 80vw;
 }
 

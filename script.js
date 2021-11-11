@@ -27,7 +27,9 @@ function aggiungiElemento() {
   // create a new car and add it to the div
   let car = document.createElement('div');
   car.id = 'car';
-  car.style.backgroundColor = randomColor();
+  newColor = randomColor();
+  car.style.backgroundColor = newColor;
+  document.getElementById("codice").innerHTML=newColor;
   if (variaDim) {
     dim = randomIntFromInterval(40, 100);
   }
@@ -49,7 +51,9 @@ function togliElemento() {
 
 function cambiaSfondo() {
   if (document.body.style.backgroundColor == "black") {
-    document.body.style.backgroundColor=randomColor();
+      newColor = randomColor();
+      document.body.style.backgroundColor=newColor;
+      document.getElementById("codice").innerHTML=newColor;
   }
   else {
     document.body.style.backgroundColor="black";

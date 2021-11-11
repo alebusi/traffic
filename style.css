@@ -33,6 +33,20 @@ div:hover {
   animation: mymoveSelection 1s;
 }
 
+#codice {
+      left: 20vw;
+      top: 50vh;
+      width: 60vw;
+      opacity: 0;
+      font-size: 100px;
+      background-color: black;
+      color: white;
+}
+
+#codice:hover {
+    opacity: 1;
+}
+
 @keyframes mymoveSelection {
   0%   {background-color: white;}
   100% {background-color: black;}

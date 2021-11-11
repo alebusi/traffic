@@ -68,3 +68,7 @@ function cambiaDimensione() {
     variaDim = true;
   }
 }
+
+function nulla() {
+    a=1;
+}
